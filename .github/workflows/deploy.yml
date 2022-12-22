@@ -21,13 +21,13 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: Install dependencies
-        run: cd ./noel && yarn
+        run: yarn
 
       - name: Generate
-        run: cd ./noel && yarn generate
+        run: yarn generate
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./noel/dist
+          publish_dir: ./dist
