@@ -52,7 +52,7 @@ const forback = () => {
 
 const checkCode = () => {
   scene.value = 'Result'
-  if (code.value === '1234') {
+  if (code.value === 'K42RPX4G') {
     isCodeValid.value = true
   }
 }
